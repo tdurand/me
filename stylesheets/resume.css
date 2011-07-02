@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'Sketchy';
+  src: url('../images/Sketchy.ttf');
+}
+body {
+	margin:auto;
+    width:960px;
+	font-size:1em;
+    font-family:Tahoma,serif;
+}
+/******** HEADER ********************/
+header .sketchy {
+    font-family: 'Sketchy', serif; 
+}
+header h1.sketchy {
+    font-size: 2.6em;
+}
+header h2.sketchy {
+    font-size: 1.7em;
+}
+/******** NAVBAR ******************/
+nav ul {
+    list-style-type: none;
+    padding:0;
+}
+nav li {
+	padding: 0px 5px 0px 5px;
+	margin: 15px 10px 15px 10px;
+    display:inline-block;
+}
+nav li a {
+	color:#333;
+	padding-bottom:3px;
+	text-decoration: none;
+}
+nav li a:hover {
+	-webkit-border-image: url('../images/handdraw-underline-nav.png') 15% stretch stretch;
+	border-width:0;
+    border-bottom-width:20px;
+}
+/******** CONTENT ************/
+section {
+    -webkit-border-image: url('../images/handdraw-test.png') 25% repeat repeat;
+    border-width:20px;
+}
+.footer {
+	height:400px;
+}

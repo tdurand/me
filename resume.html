@@ -6,63 +6,66 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>resume</title>
 	<meta name="author" content="Thibault DURAND">
-	<style>
-	@font-face {
-      font-family: 'Sketchy';
-      src: url('images/Sketchy.ttf');
-    }
-    body {
-        margin:auto;
-        width:960px;
-        font-size:1.2em; 
-    }
-    header {
-        font-family: 'Sketchy', serif;
-    }
-    article {
-        -webkit-border-image: url('images/handdraw-test.png') 25% repeat repeat;
-        border-width:20px;
-        width:500px;
-    }
-    ul {
-        list-style-type: none;
-        padding:0;
-    }
-    li {
-        display:inline-block;
-    }
-    </style>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	
+	<link rel="stylesheet" href="stylesheets/resume.css" type="text/css" media="screen" title="no title" charset="utf-8">
 </head>
 <body> 
     <header>
         <h1 class="sketchy">Thibault Durand</h1>
-        <h3 class="sketchy">Web Software Engineer</h3>
+        <h2 class="sketchy">Web Software Engineer</h2>
         <nav>
             <ul>
-                <li>Formation</li>
-                <li>Expériences</li>
-                <li>Compétences</li>
-                <li>Réalisations</li>
-                <li>Contact</li>
+                <li><a href="#formation">Formation</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#experiences">Expériences</a></li>
+                <li><a href="#realisation">Réalisations</a></li>
+                <li><a href="#interets">Centres d'intérêts</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>   
     </header>
-    <section>
-        <article>
-            <h3>Formation</h3>
-        </article>
-        <article>
-            <h3>Compétences</h3>
-        </article>
-        <article>
-            <h3>Expériences</h3>
-        </article>
-        <article>
-            <h3>Réalisations</h3>
-        </article>
-        <article>
-            <h3>Contact</h3>
-        </article>
-    </section>  
+    <div id="content">
+        
+    </div>
+    <section id="formation">
+        <h3>Formation</h3>
+        <article></article>
+    </section>
+    <section id="competences">
+        <h3>Compétences</h3>
+        <article></article>
+    </section>
+    <section id="experiences">
+        <h3>Expériences</h3>
+        <article></article>
+    </section>
+    <section id="realisation">
+        <h3>Réalisations</h3>
+        <article></article>
+    </section>
+    <section id="interets">
+        <h3>Centres d'intérêts</h3>
+        <article></article>
+    </section>
+    <section id="contact">
+        <h3>Contact</h3>
+        <article></article>
+    </section>
+    <section class="footer">
+    </section>
+    <script type="text/javascript" charset="utf-8">
+
+        /*************************************
+         * Auto-scroll menu
+         ************************************/
+
+        $("nav a").click(function(){
+            var topHeight = $( $(this).attr("href") ).offset().top;
+            $('html, body').animate({scrollTop:topHeight,duration:500});
+            return false;
+        });
+
+    </script>
 </body>
 </html>
