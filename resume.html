@@ -7,100 +7,137 @@
 	<title>resume</title>
 	<meta name="author" content="Thibault DURAND">
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="libs/icanhaz.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="data/FR.js" type="text/javascript" charset="utf-8"></script>
 	
 	<link rel="stylesheet" href="stylesheets/resume.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	
+	<script id="cv" type="text/html">
+        <header>
+            <h1 class="sketchy">{{title}}</h1>
+            <h2 class="sketchy">{{subtitle}}</h2>
+            <nav>
+                <ul>
+                    {{#education}}
+                    <li><a href="#education">{{>icon16}} {{label}}</a></li>
+                    {{/education}}
+                    {{#skills}}
+                    <li><a href="#skills">{{>icon16}} {{label}}</a></li>
+                    {{/skills}}
+                    {{#experiences}}
+                    <li><a href="#experiences">{{>icon16}} {{label}}</a></li>
+                    {{/experiences}}
+                    {{#achievements}}
+                    <li><a href="#achievements">{{>icon16}} {{label}}</a></li>
+                    {{/achievements}}
+                    {{#interests}}
+                    <li><a href="#interests">{{>icon16}} {{label}}</a></li>
+                    {{/interests}}
+                    {{#contact}}
+                    <li><a href="#contact">{{>icon16}} {{label}}</a></li>
+                    {{/contact}}
+                </ul>
+            </nav>   
+        </header>
+        
+        {{#education}}
+        <section id="education">
+            <h3>{{>icon24}} {{label}}</h3>
+            <article>
+                <ul>
+                {{#list}}
+                    <li>{{period}} : {{{content}}}</li>
+                {{/list}}
+                </ul>
+            </article>
+        </section>
+        {{/education}}
+        
+        {{#skills}}
+        <section id="skills">
+            <h3>{{>icon24}} {{label}}</h3>
+            {{#articles}}
+            <article>
+                <h4>{{title}}</h4>
+                <ul>
+                {{#list}}
+                    <li>{{{content}}}</li>
+                {{/list}}
+                </ul>
+            </article>
+            {{/articles}}
+        </section>
+        {{/skills}}
+        
+        {{#experiences}}
+        <section id="experiences">
+            <h3>{{>icon24}} {{label}}</h3>
+            <article>
+                <ul>
+                {{#list}}
+                    <li>{{date}}-{{duration}} : {{{content}}}</li>
+                {{/list}}
+                </ul>
+            </article>
+        </section>
+        {{/experiences}}
+        
+        {{#achievements}}
+        <section id="achievements">
+            <h3>{{>icon24}} {{label}}</h3>
+            <article>
+            </article>
+        </section>
+        {{/achievements}}
+        
+        {{#interests}}
+        <section id="interests">
+            <h3>{{>icon24}} {{label}}</h3>
+            <article>
+                <p>{{{content}}}</p>
+            </article>
+        </section>
+        {{/interests}}
+        
+        {{#contact}}
+        <section id="">
+            <h3>{{>icon24}} Contact</h3>
+            <article>
+                <ul>
+                {{#list}}
+                    <li>{{{content}}}</li>
+                {{/list}}
+                </ul>
+            </article>
+        </section>
+        {{/contact}}
+        <div class="footer">
+        </div>
+    </script>
+    
+    <script id="icon24" class="partial" type="text/html">
+        <img src="images/icons/{{icon}}.png" width="24" height="24" alt="{{label}}" />
+    </script>
+    
+    <script id="icon16" class="partial" type="text/html">
+        <img src="images/icons/{{icon}}.png" width="16" height="16" alt="{{label}}" />
+    </script>
+    
 </head>
 <body> 
-    <header>
-        <h1 class="sketchy">Thibault Durand</h1>
-        <h2 class="sketchy">Un passionné des technologies web</h2>
-        <nav>
-            <ul>
-                <li><a href="#formation"><img src="images/icons/notepad.png" width="16" height="16" alt="Notepad"> Formation</a></li>
-                <li><a href="#competences"><img src="images/icons/star.png" width="16" height="16" alt="Star"> Compétences</a></li>
-                <li><a href="#experiences"><img src="images/icons/statistic.png" width="16" height="16" alt="Statistic"> Expériences</a></li>
-                <li><a href="#realisation"><img src="images/icons/tag.png" width="16" height="16" alt="Tag"> Réalisations</a></li>
-                <li><a href="#interets"><img src="images/icons/favourites.png" width="16" height="16" alt="Favourites"> Centres d'intérêts</a></li>
-                <li><a href="#contact"><img src="images/icons/user-man.png" width="16" height="16" alt="User Man"> Contact</a></li>
-            </ul>
-        </nav>   
-    </header>
-    <section id="formation">
-        <h3><img src="images/icons/notepad.png" width="24" height="24" alt="Notepad"> Formation</h3>
-        <article>
-            <p>2011/2012 : 5<sup>eme</sup> année à l'UFC de Fortaleza au Brésil, département Télé-Informatique</p>
-            <p>2009/2011 : 3<sup>eme</sup> et 4<sup>eme</sup> année au département Informatique de l'INSA de Lyon</p>
-            <p><i>Génie logiciel, Système d’information, Interface utilisateur, Gestion de projet, Démarche qualité...</i></p>
-            <p>2007/2009 : Classe préparatoires intégrées à l'INSA de Lyon</p>
-            <p>2007: Bac S scientifique mention Bien -spécialité Mathématiques à Gueret (23)</p>
-        </article>
-    </section>
-    <section id="competences">
-        <h3><img src="images/icons/star.png" width="24" height="24" alt="Star"> Compétences</h3>
-        <article>
-            <h4>Langues</h4>
-            <ul>
-                <li>Anglais courant</li>
-                <li>Espagnol lu / écrit / parlé</li>
-                <li>Russe : notions</li>
-                <li>Portugais : actuellement au brésil</li>
-            </ul>
-            <h4>Informatique</h4>
-            <ul>
-                <li>Outils : Eclipse, The Gimp, Git / SVN, Matlab</li>
-                <li>Web : HTML5, CSS3, JavaScript, J2EE , XML/JSON</li>
-                <li>Frameworks : jQuery/KnockoutJS/Backbone.js , Play! Framework</li>
-                <li>Modélisation : UML, Merise</li>
-                <li>Languages : Java, Scala, C/C++, PHP, SQL</li>
-                <li>Autre: Nuxeo (GED), Apache/Tomcat, Ant</li>
-                <li>Systèmes : Linux/Unix, Mac OSX, Windows Server, VxWorks</li>
-            </ul>
-        </article>
-    </section>
-    <section id="experiences">
-        <h3><img src="images/icons/statistic.png" width="24" height="24" alt="Statistic"> Expériences</h3>
-        <article>
-            <p>2010: 2 mois</p>
-            <p>mission de Développement : GED Open Source à ONYX Informatique (69) auto-formation sur le Framework Nuxeo, réalisation d’un audit client, identification du besoin, conception et réalisation de plugins spécifiques.</p>
-            <p>2009 : 1,5 mois</p>
-            <p>mission de Responsable Informatique à Cartonnerie JEAN (23) administration réseau, gestion	d’un	système	d’information,	maintenance matérielle, Windows Server 2003, Wavesoft</p>
-            <p>2008 : 1 mois</p>
-            <p>stage ouvrier à SAUTHON Industrie– Service Emballage – Guéret (23) travail en équipe, à la chaîne</p>
-            <p>2007 : 1,5 mois</p>
-            <p>mission de Développement : application de gestion de stock à Cartonnerie JEAN identification du besoin, conception de l’application, gestion des données, développement, application Web, PHP, SQL</p>
-            <p>2006 : 1 mois</p>
-            <p>mission de Développement d’un site internet pour Cartonnerie JEAN collecte d’information, synthèse, réalisation graphique, traitement d’images</p>
-            <p>2009-2011 3 ans</p>
-            <p>Président de l’association de canoë-kayak de l’INSA de Lyon organisation de Week-end rafting/canoë (pour 40 participants), encadrement de sorties d’initiation, prospection sponsors, logistique, trésorerie, communication</p>
-        </article>
-    </section>
-    <section id="realisation">
-        <h3><img src="images/icons/tag.png" width="24" height="24" alt="Tag"> Réalisations</h3>
-        <article></article>
-    </section>
-    <section id="interets">
-        <h3><img src="images/icons/favourites.png" width="24" height="24" alt="Favourites"> Centres d'intérêts</h3>
-        <article>
-            <p>Voyages, Sports : Raids multisports (VTT, Trail, Course d’orientation), Canoë-Kayak (5 ans, diplôme d’initiateur), Rando ...</p>
-        </article>
-    </section>
-    <section id="contact">
-        <h3><img src="images/icons/user-man.png" width="24" height="24" alt="User Man"> Contact</h3>
-        <article>
-            <ul>
-                <li>Email : tibo.durand+cv@gmail.com</li>
-                <li>Skype : tib-web</li>
-            </ul>
-        </article>
-    </section>
-    <div class="footer">
-    </div>
+    
+    
+    
+</body>
     <script type="text/javascript" charset="utf-8">
 
-        /*************************************
-         * Auto-scroll menu
-         ************************************/
-
+        //I Can haz stuff
+        ich.grabTemplates();
+        var html = ich.cv(data_FR);
+        
+        $("body").append(html);
+        
+        //Scroll menu
         $("nav a").click(function(){
             var topHeight = $( $(this).attr("href") ).offset().top;
             $('html, body').animate({scrollTop:topHeight,duration:500});
@@ -108,5 +145,4 @@
         });
 
     </script>
-</body>
 </html>
