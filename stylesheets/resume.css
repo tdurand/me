@@ -6,11 +6,11 @@ body {
 	margin:auto;
     width:960px;
 	font-size:1em;
-    font-family:Tahoma,serif;
+    font-family:Tahoma,Arial,serif;
 }
 /******** HEADER ********************/
 header .sketchy {
-    font-family: 'Sketchy', serif; 
+    font-family: 'Sketchy',Arial, serif; 
 }
 header h1.sketchy {
     font-size: 2.6em;
