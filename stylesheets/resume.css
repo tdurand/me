@@ -28,7 +28,9 @@ header section#me {
 header section#me article#photo {
   float:left;
   background-image:url("../images/photo.jpg");
+  -moz-box-shadow:0 0 5px black;
   -webkit-box-shadow:0 0 5px black;
+  box-shadow:0 0 5px black;
   width:100px;
   height:127px;
 }
@@ -135,6 +137,7 @@ section#experiences li {
   clear:both;
 }
 section#experiences div.exp-time {
+  padding-top:5px;
   margin-bottom:15px;
   width:15%;
   float:left;
@@ -168,6 +171,7 @@ section#education li {
   clear:both;
 }
 section#education div.edu-time {
+  padding-top:5px;
   margin-bottom:15px;
   width:15%;
   float:left;
