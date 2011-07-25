@@ -24,7 +24,7 @@ var data_FR = {
         contact : "Contact"
     },
     currently : {
-        content : "Actuellement en dernière année d'étude au Brésil, je suis ouvert aux opportunités."
+        content : "Actuellement en dernière année d'étude au Brésil, je suis ouvert aux opportunités à partir de Janvier 2012"
     },
     education : {
         label : "Formation",
@@ -54,10 +54,13 @@ var data_FR = {
         articles : [
             {
                 class : "lang",
-                title : "Langue",
+                title : "Langues",
                 list : [
                     {
                         content : "Anglais <b>courant</b>"
+                    },
+                    {
+                        content : "Portugais : actuellement au Brésil ;-)"
                     },
                     {
                         content : "Espagnol lu / écrit / parlé"
@@ -65,9 +68,6 @@ var data_FR = {
                     {
                         content : "Russe : notions"
                     },
-                    {
-                        content : "Portugais : actuellement au Brésil ;-)"
-                    }
                     ]
             },
             {
@@ -121,7 +121,7 @@ var data_FR = {
             {
                 date : "2008",
                 duration : "1 mois",
-                content : "stage ouvrier à SAUTHON Industrie– Service Emballage – Guéret (23) <br /> <b>travail en équipe</b>, à la chaîne."
+                content : "stage ouvrier à SAUTHON Industrie, Service Emballage, Guéret (23) <br /> <b>travail en équipe</b>, à la chaîne."
             },
             {
                 date : "2007",

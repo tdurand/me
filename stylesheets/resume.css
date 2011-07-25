@@ -14,6 +14,8 @@ header .sketchy {
 }
 header h1.sketchy {
     font-size: 2.6em;
+    margin-top:10px;
+    margin-bottom:15px;
 }
 header h2.sketchy {
     font-size: 1.7em;
@@ -21,11 +23,22 @@ header h2.sketchy {
 header section#me {
   width:60%;
   float:left;
+  clear:both;
+}
+header section#me article#photo {
+  float:left;
+  background-image:url("../images/photo.jpg");
+  -webkit-box-shadow:0 0 5px black;
+  width:100px;
+  height:127px;
+}
+header section#me article#titles {
+  float:right;
 }
 header section#card {
   float:right;
   width:30%;
-  margin-top:30px;
+  margin-top:10px;
   text-align:right;
 }
 header section#card ul{
@@ -48,6 +61,12 @@ header section#language ul{
 }
 header section#language li{
   display:inline-block;
+}
+header section#language a {
+  color:black;
+}
+header section#language a:hover {
+  background-color:#d0ff9a;
 }
 /******** NAVBAR ******************/
 nav {
@@ -102,7 +121,7 @@ nav li a:hover {
   color:black;
 }
 #content section a:hover {
-  font-style:italic;
+  background-color:#d0ff9a;
 }
 /********** CONTENT SPECIFIC STYLES **********/
 section#skills  h4{
