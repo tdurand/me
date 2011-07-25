@@ -18,7 +18,41 @@ header h1.sketchy {
 header h2.sketchy {
     font-size: 1.7em;
 }
+header section#me {
+  width:60%;
+  float:left;
+}
+header section#card {
+  float:right;
+  width:30%;
+  margin-top:30px;
+  text-align:right;
+}
+header section#card ul{
+  list-style-type:none;
+}
+header section#currently {
+  text-align:center;
+  font-style:italic;
+  margin-bottom:5px;
+  background-color:#d0ff9a;
+  border-radius:5px 5px;
+}
+header section#language {
+  margin:0;
+  text-align:right;
+}
+header section#language ul{
+  list-style-type:none;
+  padding:0;
+}
+header section#language li{
+  display:inline-block;
+}
 /******** NAVBAR ******************/
+nav {
+  clear:both;
+}
 nav ul {
     list-style-type: none;
     padding:0;
@@ -42,14 +76,14 @@ nav li a:hover {
     border-bottom-width:20px;
 }
 /******** CONTENT ************/
-section {
+#content section {
     -webkit-border-image: url('../images/handdraw-section.png') 25% repeat repeat;
 	-moz-border-image: url('../images/handdraw-section.png') 25% repeat repeat;
 	-o-border-image: url('../images/handdraw-section.png') 25% repeat repeat;
 	border-image: url('../images/handdraw-section.png') 25% repeat repeat;
     border-width:20px;
 }
-section h3 {
+#content section h3 {
 	margin-top:0;
 	color:#333;
 	font-weight: normal;
@@ -61,6 +95,74 @@ section h3 {
     border-bottom-width:10px;
 	
 }
+#content section ul {
+  list-style-type:none;
+}
+#content section a {
+  color:black;
+}
+#content section a:hover {
+  font-style:italic;
+}
+/********** CONTENT SPECIFIC STYLES **********/
+section#skills  h4{
+  margin-top:0;
+  padding-top:0;
+}
+section#experiences ul {
+  list-style:none;
+}
+section#experiences li {
+  clear:both;
+}
+section#experiences div.exp-time {
+  margin-bottom:15px;
+  width:15%;
+  float:left;
+}
+section#experiences div.exp-time span.duration {
+  margin-top:5px;
+  font-style:italic;
+  display:block;
+}
+section#experiences div.exp-content {
+  margin-bottom:15px;
+  width:80%;
+  float:right;
+  text-align:justify;
+}
+section#skills li {
+  padding-bottom:5px;
+}
+article.informatic {
+  width:55%;
+  float:left;
+}
+article.lang {
+  width:40%;
+  float:right;
+}
+section#education ul {
+  list-style:none;
+}
+section#education li {
+  clear:both;
+}
+section#education div.edu-time {
+  margin-bottom:15px;
+  width:15%;
+  float:left;
+}
+section#education div.edu-content {
+  margin-bottom:15px;
+  width:80%;
+  float:right;
+  text-align:justify;
+}
+
 .footer {
-	height:1000px;
+  height:1000px;
+}
+.clear {
+  clear:both;
 }

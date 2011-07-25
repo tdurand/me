@@ -1,5 +1,5 @@
-var data_FR = {
-    title : "Thibault Durand",
+var data_BR = {
+    title : "Thibault Durand BR",
     subtitle : "Développeur passionné des technologies web",
     card : [
         {
