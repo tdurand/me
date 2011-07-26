@@ -1,4 +1,5 @@
-var data_BR = {
+var data_PT = {
+    availablelanguages : "Disponível idiomas :",
     title : "Thibault Durand BR",
     subtitle : "Développeur passionné des technologies web",
     card : [

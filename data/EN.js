@@ -1,4 +1,5 @@
 var data_EN = {
+    availablelanguages : "Available languages :",
     title : "Thibault Durand EN",
     subtitle : "Développeur passionné des technologies web",
     card : [
