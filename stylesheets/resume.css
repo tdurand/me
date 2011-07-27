@@ -21,7 +21,7 @@ header h2.sketchy {
     font-size: 1.7em;
 }
 header section#me {
-  width:60%;
+  width:65%;
   float:left;
   clear:both;
 }
@@ -31,16 +31,18 @@ header section#me article#photo {
   -moz-box-shadow:0 0 5px black;
   -webkit-box-shadow:0 0 5px black;
   box-shadow:0 0 5px black;
+  margin-right:15px;
   width:100px;
   height:127px;
 }
 header section#me article#titles {
-  float:right;
+  text-align:left;
 }
 header section#card {
   float:right;
-  width:30%;
+  width:27%;
   margin-top:10px;
+  margin-left:0;
   text-align:right;
 }
 header section#card ul{

@@ -1,34 +1,34 @@
 var data_PT = {
     availablelanguages : "Disponível idiomas :",
-    title : "Thibault Durand BR",
-    subtitle : "Développeur passionné des technologies web",
+    title : "Thibault Durand",
+    subtitle : "Desenvolvedor apaixonado por tecnologias web",
     card : [
         {
-            content : "22 ans"
+            content : "22 anos"
         },
         {
-            content: "nationalité française",
+            content: "nacionalidade francesa",
         },
         {
-            content : "permis B, véhicule",
+            content : "licença de veículo",
         },
         {
-            content : "<b>mobilité internationale</b>"
+            content : "<b>mobilidade internacional</b>"
         },
     ],
     nav : {
-        education : "Formation",
-        skills : "Compétences",
-        experiences : "Expériences",
-        achievements : "Réalisations",
-        interests : "Centres d'intérêts",
-        contact : "Contact"
+        education : "Formação",
+        skills : "Competências",
+        experiences : "Experiências",
+        achievements : "Conquistas",
+        interests : "Interesses",
+        contact : "Contato"
     },
     currently : {
-        content : "Actuellement en dernière année d'étude au Brésil, je suis ouvert aux opportunités."
+        content : "Atualmente no último ano de estudo no Brasil, estou aberto a oportunidades de janeiro 2012."
     },
     education : {
-        label : "Formation",
+        label : "Formação",
         icon : "notepad",
         list : [
             {
@@ -50,7 +50,7 @@ var data_PT = {
         ]
     },
     skills : {
-        label : "Compétences",
+        label : "Competências",
         icon : "star",
         articles : [
             {
@@ -101,7 +101,7 @@ var data_PT = {
         ]
     },
     experiences : {
-        label : "Expériences",
+        label : "Experiências",
         icon : "statistic",
         list : [
             {
@@ -143,16 +143,16 @@ var data_PT = {
         ]
     },
     achievements : {
-        label : "Réalisations",
+        label : "Conquistas",
         icon : "tag"
     },
     interests : {
-        label : "Centres d'intérêts",
+        label : "Interesses",
         icon : "favourites",
         content : "Voyages, Sports : Raids multisports (VTT, Trail, Course d’orientation), Canoë-Kayak, Rando ..."
     },
     contact : {
-        label : "Contact",
+        label : "Contato",
         icon : "user-man",
         list : [
             {
