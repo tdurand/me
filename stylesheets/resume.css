@@ -3,9 +3,9 @@
   src: url('../images/Sketchy.ttf');
 }
 body {
-	margin:auto;
+    margin:auto;
     width:960px;
-	font-size:1em;
+    font-size:1em;
     font-family:Tahoma,Arial,serif;
 }
 /******** HEADER ********************/

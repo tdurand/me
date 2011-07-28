@@ -144,7 +144,8 @@ var data_FR = {
     },
     achievements : {
         label : "Réalisations",
-        icon : "tag"
+        icon : "tag",
+        content: "En constuction"
     },
     interests : {
         label : "Centres d'intérêts",
