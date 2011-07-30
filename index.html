@@ -1,1 +1,241 @@
-<p>...</p>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>resume</title>
+    <meta name="author" content="Thibault Durand">
+    <script src="data/FR.js" type="text/javascript" charset="utf-8"></script>
+    <script src="data/EN.js" type="text/javascript" charset="utf-8"></script>
+    <script src="data/PT.js" type="text/javascript" charset="utf-8"></script>
+    <script src="libs/jquery-1.4.2.min.js" type="text/javascript" ></script>
+    <script src="libs/icanhaz.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="libs/underscore-min.js" charset="utf-8"></script>
+    <script src="libs/backbone-min.js" type="text/javascript" charset="utf-8"></script>
+    
+    <link rel="stylesheet" href="stylesheets/resume.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    
+    <script id="cv" type="text/html">
+        /* Flag icons from fam fam fam http://www.famfamfam.com/lab/icons/flags/*/
+        /* Handrawn icons from http://tutsii.deviantart.com/ */
+        <header>
+            <section id="language">
+                <p class="availablelanguages">{{availablelanguages}}</p>
+                <ul>
+                    <li><a href=""><img src="images/flags/fr.png" title="FR" /></a></li>
+                    <!-- <li><a href="#en"><img src="images/flags/gb.png" title="EN" /></a></li> -->
+                    <li><a href="#pt"><img src="images/flags/pt.png" title="PT" /></a></li>
+                </ul>
+            </section>
+            <div>
+            <section id="me">
+            <article id="photo">
+            </article>
+            <article id="titles">
+            <h1 class="sketchy">{{title}}</h1>
+            <h2 class="sketchy">{{subtitle}}</h2>
+            </article>
+            </section>
+            <section id="card">
+                <ul>
+                {{#card}}
+                    <li>{{{content}}}</li>
+                {{/card}}
+                <ul>
+            </section>
+            </div>
+            <nav>
+                <ul>
+                    {{#education}}
+                    <li><a href="#education">{{>icon16}} {{label}}</a></li>
+                    {{/education}}
+                    {{#skills}}
+                    <li><a href="#skills">{{>icon16}} {{label}}</a></li>
+                    {{/skills}}
+                    {{#experiences}}
+                    <li><a href="#experiences">{{>icon16}} {{label}}</a></li>
+                    {{/experiences}}
+                    {{#achievements}}
+                    <li><a href="#achievements">{{>icon16}} {{label}}</a></li>
+                    {{/achievements}}
+                    {{#interests}}
+                    <li><a href="#interests">{{>icon16}} {{label}}</a></li>
+                    {{/interests}}
+                    {{#contact}}
+                    <li><a href="#contact">{{>icon16}} {{label}}</a></li>
+                    {{/contact}}
+                </ul>
+            </nav>
+        {{#currently}}
+        <section id="currently">
+            <p>{{{content}}}</p>
+        </section>
+        {{/currently}}
+        </header>
+        <div id="content">
+        {{#education}}
+        <section id="education">
+            <h3>{{>icon24}} {{label}}</h3>
+            <article>
+                <ul>
+                {{#list}}
+                    <li>
+                        <div class="edu-time">
+                            <span class="period">{{period}}</span>
+                            <span class="duration">{{duration}}</span>
+                        </div>
+                        <div class="edu-content">
+                            {{{content}}}
+                        </div>
+                    </li>
+                {{/list}}
+                </ul>
+            </article>
+            <div class="clear"></div>
+        </section>
+        {{/education}}
+        
+        {{#skills}}
+        <section id="skills">
+            <h3>{{>icon24}} {{label}}</h3>
+            {{#articles}}
+            <article class="{{class}}">
+                <h4>{{title}}</h4>
+                <ul>
+                {{#list}}
+                    <li>{{{content}}}</li>
+                {{/list}}
+                </ul>
+            </article>
+            {{/articles}}
+            <div class="clear"></div>
+        </section>
+        {{/skills}}
+        
+        {{#experiences}}
+        <section id="experiences">
+            <h3>{{>icon24}} {{label}}</h3>
+            <article>
+                <ul>
+                {{#list}}
+                    <li>
+                        <div class="exp-time">
+                            <span class="date">{{date}}</span>
+                            <span class="duration">{{duration}}</span>
+                        </div>
+                        <div class="exp-content">
+                            <span class="content">{{{content}}}</span>
+                        </div>
+                    </li>
+                {{/list}}
+                </ul>
+            </article>
+            <div class="clear"></div>
+        </section>
+        {{/experiences}}
+        
+        {{#achievements}}
+        <section id="achievements">
+            <h3>{{>icon24}} {{label}}</h3>
+            <article>
+            <p>{{{content}}}</p>
+            </article>
+        </section>
+        {{/achievements}}
+        
+        {{#interests}}
+        <section id="interests">
+            <h3>{{>icon24}} {{label}}</h3>
+            <article>
+                <p>{{{content}}}</p>
+            </article>
+        </section>
+        {{/interests}}
+        
+        {{#contact}}
+        <section id="contact">
+            <h3>{{>icon24}} {{label}}</h3>
+            <article>
+                <ul>
+                {{#list}}
+                    <li>{{{content}}}</li>
+                {{/list}}
+                </ul>
+            </article>
+        </section>
+        {{/contact}}
+        <div class="footer">
+        </div>
+    </div>
+    </script>
+    
+    <script id="icon24" class="partial" type="text/html">
+        <img src="images/icons/{{icon}}.png" width="24" height="24" alt="{{label}}" />
+    </script>
+    
+    <script id="icon16" class="partial" type="text/html">
+        <img src="images/icons/{{icon}}.png" width="16" height="16" alt="{{label}}" />
+    </script>
+    
+</head>
+<body> 
+    
+</body>
+    <script type="text/javascript" charset="utf-8">
+    
+    $(document).ready(function() {
+    
+        var setLanguage=function(lang) {
+            var htmlToAppend;
+            switch(lang) {
+                case "FR" : htmlToAppend=ich.cv(data_FR)
+                break;
+                case "EN" : htmlToAppend=ich.cv(data_EN)
+                break;
+                case "PT" : htmlToAppend=ich.cv(data_PT)
+                break;
+                default : htmlToAppend=ich.cv(data_FR);
+            }
+            $("body").html(htmlToAppend);
+        }
+        
+        //Scroll menu
+        $("nav a").live("click",function(){
+            var topHeight = $( $(this).attr("href") ).offset().top;
+            $('html, body').animate({scrollTop:topHeight,duration:500});
+            return false;
+        });
+        
+        var Curriculum = Backbone.Router.extend({
+            
+            routes : {
+                "":      "fr",
+                "pt":    "pt",
+                "en":    "en",
+            },
+            
+            initialize : function() {
+                ich.grabTemplates();
+            },
+            
+            fr : function() {
+                setLanguage("FR");
+            },
+            
+            en : function() {
+                setLanguage("EN");
+            },
+            
+            pt : function() {
+                setLanguage("PT");
+            }
+        });
+        
+        var cv=new Curriculum();
+        Backbone.history.start();
+        
+    })
+
+    </script>
+</html>
