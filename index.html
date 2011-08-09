@@ -8,7 +8,7 @@
     <meta name="author" content="Thibault Durand">
     <script src="data/FR.js" type="text/javascript" charset="utf-8"></script>
     <script src="data/EN.js" type="text/javascript" charset="utf-8"></script>
-    <script src="data/PT.js" type="text/javascript" charset="utf-8"></script>
+    <script src="data/BR.js" type="text/javascript" charset="utf-8"></script>
     <script src="libs/jquery-1.4.2.min.js" type="text/javascript" ></script>
     <script src="libs/icanhaz.min.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript" src="libs/underscore-min.js" charset="utf-8"></script>
@@ -38,7 +38,7 @@
                 <ul>
                     <li><a href=""><img src="images/flags/fr.png" title="FR" /></a></li>
                     <!-- <li><a href="#en"><img src="images/flags/gb.png" title="EN" /></a></li> -->
-                    <li><a href="#pt"><img src="images/flags/pt.png" title="PT" /></a></li>
+                    <li><a href="#br"><img src="images/flags/br.png" title="BR" /></a></li>
                 </ul>
             </section>
             <div>
@@ -206,7 +206,7 @@
                 break;
                 case "EN" : htmlToAppend=ich.cv(data_EN)
                 break;
-                case "PT" : htmlToAppend=ich.cv(data_PT)
+                case "BR" : htmlToAppend=ich.cv(data_PT)
                 break;
                 default : htmlToAppend=ich.cv(data_FR);
             }
@@ -224,7 +224,7 @@
             
             routes : {
                 "":      "fr",
-                "pt":    "pt",
+                "br":    "br",
                 "en":    "en",
             },
             
@@ -241,7 +241,7 @@
             },
             
             pt : function() {
-                setLanguage("PT");
+                setLanguage("BR");
             }
         });
         

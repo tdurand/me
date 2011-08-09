@@ -67,7 +67,7 @@ var data_EN = {
                         content : "Russe : notions"
                     },
                     {
-                        content : "Portugais : actuellement au Brésil ;-)"
+                        content : "Portugais (Brazil): actuellement au Brésil"
                     }
                     ]
             },

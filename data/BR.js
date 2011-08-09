@@ -67,7 +67,7 @@ var data_PT = {
                         content : "Rússia : Noções básicas"
                     },
                     {
-                        content : "Portugais : atualmente no Brasil ;-)"
+                        content : "Portugais (Brasil): atualmente no Brasil"
                     }
                     ]
             },

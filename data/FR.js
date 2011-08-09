@@ -61,7 +61,7 @@ var data_FR = {
                         content : "Anglais <b>courant</b>"
                     },
                     {
-                        content : "Portugais : actuellement au Brésil ;-)"
+                        content : "Portugais (Brésil): actuellement au Brésil"
                     },
                     {
                         content : "Espagnol lu / écrit / parlé"
@@ -145,7 +145,7 @@ var data_FR = {
     achievements : {
         label : "Réalisations",
         icon : "tag",
-        content: "En constuction"
+        content: "En construction : <a href='https://github.com/tdurand'>profil GitHub</a>"
     },
     interests : {
         label : "Centres d'intérêts",
