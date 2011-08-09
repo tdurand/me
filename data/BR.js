@@ -145,7 +145,7 @@ var data_PT = {
     achievements : {
         label : "Conquistas",
         icon : "tag",
-        content : "em construção" 
+        content : "Em construção : <a href='https://github.com/tdurand'>github profile</a> (english)" 
     },
     interests : {
         label : "Interesses",
