@@ -67,7 +67,7 @@ var data_PT = {
                         content : "Rússia : Noções básicas"
                     },
                     {
-                        content : "Portugais (Brasil): atualmente no Brasil"
+                        content : "Portugues (Brasil): atualmente no Brasil"
                     }
                     ]
             },
@@ -79,7 +79,7 @@ var data_PT = {
                         content : "<i>Ferramentas</i> : Eclipse, The Gimp, Git / SVN, Matlab"
                     },
                     {
-                        content : "<i>Web</i> : HTML5, CSS3, JavaScript, XML/JSON"
+                        content : "<i>Web</i> : HTML5, CSS3, JavaScript, XML/JSON, REST"
                     },
                     {
                         content : "<i>Frameworks</i> : jQuery/KnockoutJS/Backbone.js , Play! Framework"
@@ -107,7 +107,7 @@ var data_PT = {
             {
                 date : "2011",
                 duration : "3 meses",
-                content : "missão de <b>Desenvolvimento</b> : Aplicação web em <a href='http://www.zenexity.com'>Zenexity</a> (34) <br /> Javascript, Play! Framework, HTML5/CSS3, <b>criação</b> de um <b>aplicações web</b> WYSIWYG para criar formulários, <b>intégração</b> na software Capdemat, <b>screencast</b> demonstração"
+                content : "missão de <b>Desenvolvimento</b> : Aplicação web em <a href='http://www.zenexity.com'>Zenexity</a> (34) <br /> Javascript, Play! Framework, HTML5/CSS3, JSON, REST, <b>criação</b> de um <b>aplicações web</b> WYSIWYG para criar formulários, <b>intégração</b> na software Capdemat, <b>screencast</b> demonstração"
             },
             {
                 date : "2010",

@@ -79,7 +79,7 @@ var data_FR = {
                         content : "<i>Outils</i> : Eclipse, The Gimp, Git / SVN, Matlab"
                     },
                     {
-                        content : "<i>Web</i> : HTML5, CSS3, JavaScript, XML/JSON"
+                        content : "<i>Web</i> : HTML5, CSS3, JavaScript, XML/JSON, REST"
                     },
                     {
                         content : "<i>Frameworks</i> : jQuery/KnockoutJS/Backbone.js , Play! Framework"
@@ -107,7 +107,7 @@ var data_FR = {
             {
                 date : "2011",
                 duration : "3 mois",
-                content : "mission de <b>Développement</b> : Application web à <a href='http://www.zenexity.com'>Zenexity</a> (34) <br /> Javascript, Play! Framework, HTML5/CSS3, <b>réalisation</b> d'un <b>application web</b> WYSIWYG pour créer des formulaires, <b>intégration</b> à la plateforme existante Capdemat, <b>screencast</b> demonstration"
+                content : "mission de <b>Développement</b> : Application web à <a href='http://www.zenexity.com'>Zenexity</a> (34) <br /> Javascript, Play! Framework, HTML5/CSS3, JSON, REST,<b>réalisation</b> d'un <b>application web</b> WYSIWYG pour créer des formulaires, <b>intégration</b> à la plateforme existante Capdemat, <b>screencast</b> demonstration"
             },
             {
                 date : "2010",
