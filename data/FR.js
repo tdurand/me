@@ -145,7 +145,7 @@ var data_FR = {
     achievements : {
         label : "Réalisations",
         icon : "tag",
-        content: "En construction : <a href='https://github.com/tdurand'>profil GitHub</a>"
+        content: "En construction : vous pouvez consulter mon <a href='https://github.com/tdurand'>profil GitHub</a>"
     },
     interests : {
         label : "Centres d'intérêts",
