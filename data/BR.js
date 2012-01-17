@@ -25,7 +25,7 @@ var data_PT = {
         contact : "Contato"
     },
     currently : {
-        content : "Atualmente no último ano de estudo no Brasil, estou aberto a oportunidades de janeiro 2012."
+        content : "Atualmente no último ano de estudo no Brasil, estou aberto a oportunidades a partir de Julho 2012."
     },
     education : {
         label : "Formação",

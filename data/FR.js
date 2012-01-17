@@ -25,7 +25,7 @@ var data_FR = {
         contact : "Contact"
     },
     currently : {
-        content : "Actuellement en dernière année d'étude au Brésil, je suis ouvert aux opportunités à partir de Janvier 2012"
+        content : "Actuellement en dernière année d'étude au Brésil, je suis ouvert aux opportunités à partir de Juillet 2012"
     },
     education : {
         label : "Formation",
